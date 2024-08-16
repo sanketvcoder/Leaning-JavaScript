@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cards</title>
+</head>
+
+<body>
+    <h3>Cards Quantity</h3>
+    <button class="showQuantity" onclick="show()">Show Quantity</button>
+    <button class="AddToCart" onclick="add()">Add to Cart</button>
+    <button class="+2" onclick="addTwo()">+2</button>
+    <button class="+3" onclick="addThree()">+3</button>
+    <button class="ResetCart" onclick="reset()">Reset Cart</button>
+
+    <script>
+        let Quantity = 0
+        let showQuantity = document.querySelector('.showQuantity')
+        let AddToCart = document.querySelector('.AddToCart')
+        let two = document.querySelector('.+2')
+        let three = document.querySelector('.+3')
+        let ResetCart = document.querySelector('.ResetCart')
+
+
+
+        function show() {
+            console.log(`Cart Quantity: ${Quantity}`)
+        }
+
+        function add() {
+            Quantity = Quantity + 1
+            console.log(`Cart Quantity: ${Quantity}`)
+        }
+
+        function addTwo() {
+            Quantity = Quantity + 2
+            console.log(`Cart Quantity: ${Quantity}`)
+        }
+
+        function addThree() {
+            Quantity = Quantity + 3
+            console.log(`Cart Quantity: ${Quantity}`)
+        }
+
+        function reset() {
+            Quantity = 0
+            console.log(`Cart Quantity: ${Quantity}`)
+        }
+    </script>
+</body>
+
+</html>
